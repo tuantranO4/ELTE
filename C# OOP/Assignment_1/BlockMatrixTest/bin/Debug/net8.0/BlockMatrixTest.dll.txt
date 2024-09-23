@@ -1,0 +1,2 @@
+BlockMatrixTests.BlockMatrixTests.TestOperations
+BlockMatrixTests.BlockMatrixTests.TestExceptions

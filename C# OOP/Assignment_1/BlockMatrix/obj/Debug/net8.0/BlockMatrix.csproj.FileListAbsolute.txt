@@ -1,0 +1,14 @@
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\obj\Debug\net8.0\BlockMatrix.GeneratedMSBuildEditorConfig.editorconfig
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\obj\Debug\net8.0\BlockMatrix.AssemblyInfoInputs.cache
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\obj\Debug\net8.0\BlockMatrix.AssemblyInfo.cs
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\obj\Debug\net8.0\BlockMatrix.csproj.CoreCompileInputs.cache
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\bin\Debug\net8.0\BlockMatrix.exe
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\bin\Debug\net8.0\BlockMatrix.deps.json
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\bin\Debug\net8.0\BlockMatrix.runtimeconfig.json
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\bin\Debug\net8.0\BlockMatrix.dll
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\bin\Debug\net8.0\BlockMatrix.pdb
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\obj\Debug\net8.0\BlockMatrix.dll
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\obj\Debug\net8.0\refint\BlockMatrix.dll
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\obj\Debug\net8.0\BlockMatrix.pdb
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\obj\Debug\net8.0\BlockMatrix.genruntimeconfig.cache
+A:\OOP C#\SOL\Assignment_4 UG2F20\BlockMatrix\obj\Debug\net8.0\ref\BlockMatrix.dll

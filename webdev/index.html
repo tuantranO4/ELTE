@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="title.css">
+  
+</head>
+
+<body>
+
+    <div class="func">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="related.html">Other Recommendation</a></li>
+        <li><b><a href="contact.html">Contact Me</a></b></li>
+      </ul>
+    </div>
+
+
+  <main>
+    <section>
+      <div class="container">
+        <header class="fix">
+          <h1 class="h1">Tuan's Movie Recommendation Corner</h1>
+          <p><i><u>Today's Recommendation</u>: 5cm/s</i></p>
+        </header>
+
+        <article>
+          <h2>Movie plot:</h2>
+          <p>"5 Centimeters Per Second" is a Japanese animated film directed by Makoto Shinkai. The story revolves around the lives of two childhood friends, Takaki Tohno and Akari Shinohara, who become separated due to circumstances beyond their control. The film is divided into three parts, each capturing a different phase of their lives and the challenges they face in maintaining their connection over the years. The narrative explores themes of distance, time, and the bittersweet nature of love. The title refers to the speed at which cherry blossoms fall, symbolizing the fleeting and transient nature of life and relationships. Overall, "5 Centimeters Per Second" is a poignant and visually stunning exploration of love, loss, and the passage of time.</p>
+          <br>
+          <p>
+            <b>Genre:</b> 
+            Romantic drama Director: Makoto Shinkai 
+            <br>
+            <b>Release date:</b>
+            <br> March 3, 2007 (Japan)
+            <br>
+            <br>
+            The film is told in three parts, each of which follows the protagonist, Takaki Tono, at a different stage in his life.
+            <br>
+            <br>
+            <b>Part 1: Cherry Blossom </b>
+            <br>
+            Takaki and Akari Shinohara are close friends in elementary school. When Akari's family moves away, they promise to stay in touch. However, as time goes on, they find it increasingly difficult to maintain their friendship.
+            <br>  
+            <br>
+            <b>Part 2: Cosmonaut</b>
+            <br>
+            Takaki is now in high school and has moved to Tokyo. He is still in love with Akari, but they have not seen each other in years. When Akari announces that she is getting married, Takaki decides to meet her one last time.
+            <br>
+            <br>
+            <b>Part 3: 5 Centimeters per Second</b>
+            <br>
+            Takaki is now an adult and working in Tokyo. He is still struggling to come to terms with his lost love for Akari. One day, he sees a woman who looks like Akari on the train platform. He chases after her, but she disappears into the crowd.
+          </p>
+          <p>
+            <b>Themes:</b>
+            <br>
+            5 Centimeters per Second is a film about love, loss, and the passage of time. It is a beautifully animated and emotionally resonant film that has resonated with audiences around the world.
+            The title of the film refers to the speed at which cherry blossom petals fall. It is a metaphor for the slow but steady pace at which Takaki and Akari drift apart.
+            The film is also about the difficulty of maintaining relationships when people are separated by distance and time. Takaki and Akari are both deeply in love with each other, but they are unable to make their relationship work because of the circumstances of their lives.
+            5 Centimeters per Second is a moving and realistic film about the challenges of love and the passage of time. It is a film that will stay with you long after you have seen it.
+          </p>
+        </article>
+
+        <aside>
+          <h3>Trailer Screenshots</h3>
+          <div class="prtscr">
+            <figure>
+              <img src="sample/5-centimeters-per-second-9.jpg" alt="img1">
+            </figure>
+            <figure>
+              <img src="sample/5-centimeters-per-second-28571-1920x1080.jpg" alt="img2">
+            </figure>
+            <figure>
+              <img src="sample/5-centimeters-per-second-anime-makoto-shinkai-sky-wallpaper-preview.jpg" alt="img3">
+            </figure>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Tuan Movie Review. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const photoGrid = document.querySelector('.prtscr');
+    const toggleButton = document.createElement('button');
+    toggleButton.textContent = 'Hide Photo';
+    toggleButton.classList.add('toggle-button');
+    toggleButton.addEventListener('click', function() {
+      photoGrid.classList.toggle('hidden');
+      if (toggleButton.textContent === 'Show Photos') {
+        toggleButton.textContent = 'Hide Photo';
+      } else {
+        toggleButton.textContent = 'Show Photo';
+      }
+    });
+    document.querySelector('aside').appendChild(toggleButton);
+  </script>
+  
+</body>
+
+</html>

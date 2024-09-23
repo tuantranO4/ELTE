@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" type="text/css" href="contact.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="func">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="related.html">Other Recommendation</a></li>
+        <li><b><a href="contact.html">Contact Me</a></b></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <h1>Contact me!</h1>
+    <form action="mailto:tquoctuan746@gmail.com" method="post" enctype="text/plain">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required maxlength="30"> 
+    
+      <label for="gender">Gender:</label>
+      <label>
+          <input type="radio" id="male" name="gender" value="male"> Male
+      </label>
+      <label>
+          <input type="radio" id="female" name="gender" value="female"> Female
+      </label>
+    
+      <label for="message">Message me:</label>
+      <textarea id="message" name="message" required maxlength="800"></textarea> 
+    
+      <label for="newsletter">
+        <input type="checkbox" id="newsletter" name="newsletter">
+        Subscribe to newsletter
+      </label>
+    
+      <input type="reset" value="Reset">
+      <input type="submit" value="Submit">
+    </form>
+    
+
+    <div class="social-media-section">
+      <a href="https://www.facebook.com/tuan.tran.fract4l/" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/tuan_.04/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    </div>
+  </main>
+
+   <script>
+    const formInputs = document.querySelectorAll('input, textarea');
+    formInputs.forEach(input => {
+      input.addEventListener('focus', () => {
+        input.classList.add('focused');
+      });
+      input.addEventListener('blur', () => {
+        input.classList.remove('focused');
+      });
+    });
+
+    const socialMediaLinks = document.querySelectorAll('.social-media-section a');
+    socialMediaLinks.forEach(link => {
+      const tooltip = document.createElement('span');
+      tooltip.textContent = link.getAttribute('title');
+      tooltip.classList.add('tooltip');
+      link.appendChild(tooltip);
+
+      link.addEventListener('mouseenter', () => {
+        tooltip.classList.add('tooltip-visible');
+      });
+      link.addEventListener('mouseleave', () => {
+        tooltip.classList.remove('tooltip-visible');
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>

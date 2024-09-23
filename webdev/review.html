@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Review</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="review.css">
+  
+</head>
+
+<body>
+
+    <div class="func">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="review.html">Review</a></li>
+        <li><a href="related.html">Other Recommendation</a></li>
+        <li><b><a href="contact.html">Contact Me</a></b></li>
+      </ul>
+    </div>
+  
+  <div class="video-section">
+    <h2>Trailer of the Movie</h2>
+    <video controls poster="sample/5-centimeters-per-second-i8k8m4fssy11b0h9.jpg">
+      <source src="sample/y2mate.com - Makoto Shinkai  5 CENTIMETERS PER SECOND  On Bluray  Digital_1080p.mp4" type="video/mp4">
+      <track kind="subtitles" src="eng.vtt" srclang="en" label="English">
+    </video>
+  </div>
+
+  <main>
+    <div class="container">
+      <h2>Characters</h2>
+        <ul>
+          <li>Takaki Tono: 
+            <br>
+            The protagonist of the film. He is a kind and introspective boy who is deeply in love with Akari</li>
+            <li>Akari Shinohara:
+              <br>
+              Takaki's best friend and love interest. She is a warm and caring girl who is also struggling to come to terms with her feelings for Takaki.</li>
+            <li>
+              Kanae Sumida: 
+              <br>
+              Takaki's classmate in high school. She is a kind and supportive girl who has a crush on Takaki
+            </li>
+        </ul>
+      <div class="introduction">
+        <p></p>
+      </div>
+
+      <div class="charimg">
+        <div class="news-image">
+          <a href="sample/0_g2JGsvmYVUuPaFgv.jpg">
+            <img src="sample/0_g2JGsvmYVUuPaFgv.jpg" alt="img1">
+          </a>
+        </div>
+
+        <div class="zoom-image">
+          <img src="sample/0_g2JGsvmYVUuPaFgv.jpg" alt="Zoomed 1">
+        </div>
+
+        <div class="news-content">
+          <h2>Themes</h2>
+            <ul>
+              <li>
+                <b>Love:</b> The film explores the different aspects of love, including first love, long-distance relationships, and lost love.
+              </li>
+              <li>
+                <b>Loss:</b> The film also deals with the theme of loss, both in the context of romantic relationships and in the broader sense of life.
+              </li>
+              <li>
+                <b>Passage of time:</b> The film shows how the passage of time can change people and relationships.
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <div class="charimg">
+        <div class="news-image">
+          <a href=sample/5_Centimeters_Per_Second_(1080p)_[@Home]_Screenshot_9.png">
+            <img src="sample/5_Centimeters_Per_Second_(1080p)_[@Home]_Screenshot_9.png" alt="img2">
+          </a>
+        </div>
+        <div class="zoom-image">
+          <img src="sample/5_Centimeters_Per_Second_(1080p)_[@Home]_Screenshot_9.png" alt="Zoomed 2">
+        </div>
+        <div class="news-content">
+          <h2>Critical reception</h2>
+        <p>5 Centimeters per Second was a critical and commercial success, grossing over $30 million worldwide. The film was praised for its beautiful animation, emotional resonance, and realistic portrayal of love and loss.
+          <br>
+          <br>
+          However, some critics found the film to be too slow and melancholic. They also criticized the lack of closure at the end of the film.
+          <br>
+          <br>
+          Overall, 5 Centimeters per Second is a well-made and moving film that explores the themes of love, loss, and the passage of time in a realistic and relatable way. It is a film that will stay with you long after you have seen it.
+          </p>
+        </div>
+      </div>
+
+      <div class="charimg">
+        <div class="news-image">
+          <a href="sample/72588.jpg">
+            <img src="sample/72588.jpg" alt="img2">
+          </a>
+        </div>
+        <div class="zoom-image">
+          <img src="sample/72588.jpg" alt="Zoomed 2">
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2023 Tuan Movie Review. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var thumbnailImages = document.querySelectorAll('.news-image img');
+      var zoomedImage = document.querySelector('.zoom-image img');
+
+      for (var i = 0; i < thumbnailImages.length; i++) {
+        thumbnailImages[i].addEventListener('click', function(e) {
+          e.preventDefault();
+          zoomedImage.src = this.src;
+          document.querySelector('.zoom-image').style.display = 'block';
+        });
+      }
+
+      document.querySelector('.zoom-image').addEventListener('click', function() {
+        this.style.display = 'none';
+      });
+    });
+    
+  </script>
+</body>
+
+</html>

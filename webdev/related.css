@@ -1,0 +1,66 @@
+body {
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/779533782451724835/FF2D405135C62D8901C871940EB17CE1C12AB746/);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+strong.table{
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  font-size: 50px;
+}
+summary{
+  font-weight: bolder;
+}
+p.summary{
+  text-align: left;
+  font-weight: lighter;
+  display: block;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #bdbdbd;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  color: #fff; 
+}
+a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+a:hover {
+  color: #ffd700; 
+}
+
+a:visited {
+  color: #ffa07a; 
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+td:first-child, th:first-child {
+    width: 25%;
+}
