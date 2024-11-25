@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UGANDAWAKALIWOOD")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+90d355c0c8b56c5a179bc26b253eb6c19b01f7f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("UGANDAWAKALIWOOD")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UGANDAWAKALIWOOD")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
