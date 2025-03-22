@@ -1,0 +1,102 @@
+V "GNAT Lib v2021"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U controller_pkg%b	controller_pkg.adb	8b4ba0c0 NE OO PK GE
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U controller_pkg%s	controller_pkg.ads	c0ef98b7 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W database_pkg%s	database_pkg.adb	database_pkg.ali
+
+D ada.ads		20210520051132 76789da1 ada%s
+D a-except.ads		20210520051128 946f3014 ada.exceptions%s
+D a-ioexce.ads		20210520051128 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20210520051130 119b8fb3 ada.streams%s
+D a-string.ads		20210520051130 90ac6797 ada.strings%s
+D a-sttebu.ads		20210520051130 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20210520051130 808c40ad ada.strings.utf_encoding%s
+D a-tags.ads		20210520051130 9eaa38c6 ada.tags%s
+D a-textio.ads		20210520051130 aef4d56d ada.text_io%s
+D a-unccon.ads		20210520051130 0e9b276f ada.unchecked_conversion%s
+D controller_pkg.ads	20250322213500 996508b1 controller_pkg%s
+D controller_pkg.adb	20250322213736 bcda7d1c controller_pkg%b
+D database_pkg.ads	20250322212536 f77e456b database_pkg%s
+D database_pkg.adb	20250322214004 d01a9df7 database_pkg%b
+D interfac.ads		20210520051132 edec285f interfaces%s
+D i-cstrea.ads		20210520051132 e53d8b8e interfaces.c_streams%s
+D system.ads		20210520051136 2ffa5114 system%s
+D s-crtl.ads		20210520051132 0ebbdb71 system.crtl%s
+D s-exctab.ads		20210520051132 54135002 system.exception_table%s
+D s-ficobl.ads		20210520051132 078245e4 system.file_control_block%s
+D s-parame.ads		20210520051134 4752c4cb system.parameters%s
+D s-putima.ads		20210520051134 4e095881 system.put_images%s
+D s-secsta.ads		20210520051134 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20210520051134 a7318a92 system.soft_links%s
+D s-stache.ads		20210520051134 a37c21ec system.stack_checking%s
+D s-stalib.ads		20210520051134 472fbca8 system.standard_library%s
+D s-stoele.ads		20210520051134 2dc34a04 system.storage_elements%s
+D s-stoele.adb		20210520051134 ed88f8fb system.storage_elements%b
+D s-traent.ads		20210520051134 26a8d361 system.traceback_entries%s
+D s-unstyp.ads		20210520051134 2b077493 system.unsigned_types%s
+D s-wchcon.ads		20210520051136 1b7d22d2 system.wch_con%s
+D unchconv.ads		20210520051136 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [controller_pkg standard 11 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 11|1r6 2r5 12|1r6 2r5
+X 9 a-textio.ads
+58K13*Text_IO 725e16 11|1w10 2r9 12|1w10 2r9
+506U14*Put_Line 12|11s10 13s10 24s10 26s10 36s10 38s10 49s10 51s10
+X 11 controller_pkg.ads
+6+9 Elem 8r41 9r27 15r53 17r64 22r41 12|6r53 18r15 30r65
+7+9 Key 8r32 16r47 17r53 18r53 22r47 12|17r47 30r53 42r53
+8V18 Condition{boolean} 8>28 8>37 22r52
+8*28 K{7+9}
+8*37 E{6+9}
+9V18 JSON{string} 9>23 12|26s59
+9*23 E{6+9}
+11k9*Controller_pkg 6z9 7z9 8z18 9z18 22E12 32l5 32e19 12|4b14 55l5 55t19
+13R9*Controller 13d20 15r34 16r28 17r34 18r34 26c9 30e14 12|6r34 17r28 30r34
+. 42r34
+13i20 Max{natural} 26r20 29r30
+15U14*Create 15=21 15>46 12|6b14 15l8 15t14
+15r21 con{13R9} 12|6b21 9m28 9r28
+15*46 e{6+9} 12|6b46 9r36
+16U14*Read 16>19 16>40 12|17b14 28l8 28t12
+16r19 con{13R9} 12|17b19 21r25
+16*40 k{7+9} 12|17b40 21r33
+17U14*Update 17=21 17>46 17>58 12|30b14 40l8 40t14
+17r21 con{13R9} 12|30b21 33m28 33r28
+17*46 k{7+9} 12|30b46 33r36
+17*58 e{6+9} 12|30b58 33r39
+18U14*Delete 18=21 18>46 12|42b14 53l8 53t14
+18r21 con{13R9} 12|42b21 45m28 45r28
+18*46 k{7+9} 12|42b46 45r36
+22K12 cntrl_db[13|9] 29r12 12|9r7 21r7 33r7 45r7
+29r7 DB{13|11R9[22]} 12|9m32 21r29 33m32 45m32
+X 12 controller_pkg.adb
+7b7 Success{boolean} 9m39 10r10
+18*7 reade{11|6+9} 21m36 26r64
+19b7 readsucc{boolean} 21m43 23r10
+31b7 updatesucc{boolean} 33m42 35r10
+43b7 delsucc{boolean} 45m39 48r10
+X 13 database_pkg.ads
+9k9*Database_pkg 11|3w6 22r28 13|28e17
+11R9 Database 11|29r21[22]
+14U14 Insert_Elem 12|9s16[11|22]
+15U14 Get_Elem 12|21s16[11|22]
+16U14 Update_Elem 12|33s16[11|22]
+17U14 Delete_Elem 12|45s16[11|22]
+

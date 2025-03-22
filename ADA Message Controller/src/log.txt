@@ -1,0 +1,14 @@
+Builder results
+  A:\GITCLONEBS\Study\ADA\A1\src\main.adb
+    87:36 error: expected private type "User" defined at user_pkg.ads:11
+    11:1 error: expected private type "User" defined at user_pkg.ads:11
+    87:36 error: found a string type
+    91:39 error: expected private type "Message" defined at message_pkg.ads:13
+    13:1 error: expected private type "Message" defined at message_pkg.ads:13
+    91:39 error: found type universal integer
+    105:36 error: expected private type "User" defined at user_pkg.ads:11
+    11:1 error: expected private type "User" defined at user_pkg.ads:11
+    105:36 error: found a string type
+    108:39 error: expected private type "Message" defined at message_pkg.ads:13
+    13:1 error: expected private type "Message" defined at message_pkg.ads:13
+    108:39 error: found type universal integer

@@ -1,0 +1,23 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+A:\GITCLONEBS\Study\ADA\A1\assignment.gpr
+20250322200722 9d6d6f6736c112d42f3c86c522d5d511
+[BOUND OBJECT FILES]
+A:\GITCLONEBS\Study\ADA\A1\obj\database_pkg.o
+A:\GITCLONEBS\Study\ADA\A1\obj\controller_pkg.o
+A:\GITCLONEBS\Study\ADA\A1\obj\user_pkg.o
+A:\GITCLONEBS\Study\ADA\A1\obj\message_pkg.o
+A:\GITCLONEBS\Study\ADA\A1\obj\main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-LA:\GITCLONEBS\Study\ADA\A1\obj\
+-LA:\GITCLONEBS\Study\ADA\A1\obj\
+-LC:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/
+-static
+-static-libgcc
+C:/gnat/2021/lib/gcc/x86_64-w64-mingw32/10.3.1/adalib/libgnat.a
+-Wl,--stack=0x2000000

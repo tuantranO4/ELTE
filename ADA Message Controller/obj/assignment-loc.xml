@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 4" line=" 74" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 49" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\user.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 55" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\message.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 85" line=" 54" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\database.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 28" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\database.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 23" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 6" line=" 5" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 16" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 11" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\user_pkg.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\database_pkg.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\database_pkg.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\message_pkg.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 111" line=" 13" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\message_pkg.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller_pkg.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller_pkg.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller_pkg.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller_pkg.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\controller_pkg.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\database_pkg.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 1" line=" 1" >
+      <vfs_project>A:\GITCLONEBS\Study\ADA\A1\assignment.gpr</vfs_project>
+      <vfs_file>A:\GITCLONEBS\Study\ADA\A1\src\database_pkg.ads</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
