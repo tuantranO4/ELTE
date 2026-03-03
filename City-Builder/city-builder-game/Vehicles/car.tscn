@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b6nyelne0x7l0"]
+
+[ext_resource type="Script" uid="uid://dde5telxow0gs" path="res://Vehicles/Car.cs" id="1_81dae"]
+
+[node name="Car" type="StaticBody2D" unique_id=1033304395]
+script = ExtResource("1_81dae")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=554110602]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=418719677]

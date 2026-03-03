@@ -1,0 +1,153 @@
+[gd_scene format=3 uid="uid://ksvbom8xdfhh"]
+
+[ext_resource type="PackedScene" uid="uid://b6nyelne0x7l0" path="res://Vehicles/car.tscn" id="1_pxs4k"]
+[ext_resource type="Texture2D" uid="uid://bta04svusy4m0" path="res://Assets/Vehicles+Animations/Caravan(96x96).png" id="2_cabmq"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xiq0n"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(0, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r2oec"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(96, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_v5ptw"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(192, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2yeeb"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(288, 192, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7yall"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(0, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f64te"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(96, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4nx5s"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(192, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oikh5"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(288, 96, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3t5v"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(0, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5bjbd"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(96, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3e1lo"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(192, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_58o3e"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(288, 0, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_f8imm"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(0, 288, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3cvn5"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(96, 288, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a4isu"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(192, 288, 96, 96)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y4f72"]
+atlas = ExtResource("2_cabmq")
+region = Rect2(288, 288, 96, 96)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r4lpr"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xiq0n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r2oec")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_v5ptw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2yeeb")
+}],
+"loop": true,
+"name": &"Down_bus",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7yall")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f64te")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4nx5s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_oikh5")
+}],
+"loop": true,
+"name": &"L_bus",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3t5v")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5bjbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3e1lo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_58o3e")
+}],
+"loop": true,
+"name": &"R_bus",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_f8imm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3cvn5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a4isu")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y4f72")
+}],
+"loop": true,
+"name": &"Up_bus",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cabmq"]
+size = Vector2(87, 60)
+
+[node name="HumanTransport" unique_id=1033304395 instance=ExtResource("1_pxs4k")]
+
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=554110602]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_r4lpr")
+animation = &"L_bus"
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=418719677]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_cabmq")

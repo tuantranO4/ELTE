@@ -1,0 +1,157 @@
+[gd_scene format=3 uid="uid://dtfdhv465pq82"]
+
+[ext_resource type="PackedScene" uid="uid://b6nyelne0x7l0" path="res://Vehicles/car.tscn" id="1_ua5xx"]
+[ext_resource type="Texture2D" uid="uid://ctgyglgojaj73" path="res://Assets/Vehicles+Animations/Harvester-Sheet(128x128).png" id="2_w2au2"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ps70x"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(0, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i4hvs"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(128, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a3mow"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(256, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_okxvr"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(384, 256, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yjfu4"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(0, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6nt1y"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(128, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xiyct"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(256, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_80jw6"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(384, 0, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y66en"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(0, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ejqlq"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(128, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jra1h"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(256, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d8tg6"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(384, 128, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2pcem"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(0, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7hm1"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(128, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6o3dy"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(256, 384, 128, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hdow1"]
+atlas = ExtResource("2_w2au2")
+region = Rect2(384, 384, 128, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_q5q13"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ps70x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_i4hvs")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a3mow")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_okxvr")
+}],
+"loop": true,
+"name": &"Down_wood",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yjfu4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6nt1y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xiyct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_80jw6")
+}],
+"loop": true,
+"name": &"L_wood",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y66en")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ejqlq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jra1h")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d8tg6")
+}],
+"loop": true,
+"name": &"R_wood",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2pcem")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7hm1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6o3dy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hdow1")
+}],
+"loop": true,
+"name": &"Up_wood",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w2au2"]
+size = Vector2(120, 79)
+
+[node name="WoodTransportCar" unique_id=1033304395 instance=ExtResource("1_ua5xx")]
+AnimDown = "Down_wood"
+AnimUp = "Up_wood"
+AnimLeft = "L_wood"
+AnimRight = "R_wood"
+
+[node name="AnimatedSprite2D" parent="." index="0" unique_id=554110602]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_q5q13")
+animation = &"R_wood"
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=418719677]
+position = Vector2(4, 3.5)
+shape = SubResource("RectangleShape2D_w2au2")
