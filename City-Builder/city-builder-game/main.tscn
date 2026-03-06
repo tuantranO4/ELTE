@@ -1,3 +1,9 @@
-[gd_scene format=3 uid="uid://d0t2nlerpmlw7"]
+[gd_scene load_steps=2 format=3 uid="uid://d0t2nlerpmlw7"]
 
-[node name="Main" type="Node2D" unique_id=555398577]
+[ext_resource type="PackedScene" uid="uid://dtfdhv465pq82" path="res://Vehicles/wood_transport_car.tscn" id="3_1bvp3"]
+
+[node name="Main" type="Node2D"]
+
+[node name="WoodTransportCar" parent="." instance=ExtResource("3_1bvp3")]
+
+[node name="Camera2D" type="Camera2D" parent="."]

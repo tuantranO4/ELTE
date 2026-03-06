@@ -1,5 +1,4 @@
 using Godot;
-using System;
 
 public partial class Car : Node2D
 {
@@ -17,28 +16,17 @@ public partial class Car : Node2D
 	private int _pathIndex = 0;
 	private Vector2 _targetWorldPos;
 	private bool _moving = false;
-	private bool _waitingForPath = false;
 	private Vector2I _currentDirection = Vector2I.Down;
-
-	public RoadPathfinder Pathfinder;
-	public Vector2I CurrentTile;
-	public Vector2I DestinationTile;
 
 	public override void _Ready()
 	{
 		_sprite = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
-		Position = TileToWorld(CurrentTile);
 		PlayDirectionAnim(_currentDirection);
+		StartPath();
 	}
 
 	public override void _Process(double delta)
 	{
-		if (_waitingForPath)
-		{
-			TryGetPath();
-			return;
-		}
-
 		if (!_moving) return;
 
 		Position = Position.MoveToward(_targetWorldPos, Speed * (float)delta);
@@ -51,41 +39,23 @@ public partial class Car : Node2D
 			if (_pathIndex < _path.Length)
 				MoveToNext();
 			else
-			{
-				_moving = false;
-				_sprite.Stop();
 				OnDestinationReached();
-			}
 		}
 	}
 
-	public void GoTo(Vector2I destination)
+	private void StartPath()
 	{
-		DestinationTile = destination;
-		TryGetPath();
-	}
-
-	public void RecalculatePath()
-	{
-		if (DestinationTile == default) return;
-		TryGetPath();
-	}
-
-	private void TryGetPath()
-	{
-		// TODO: hook up RoadPathfinder once roads are built
-		var path = Pathfinder?.GetPath(CurrentTile, DestinationTile);
-
-		if (path == null || path.Length <= 1)
+		_path = new Vector2I[]
 		{
-			_waitingForPath = true;
-			_moving = false;
-			return;
-		}
+			new(2, 2), new(3, 2), new(4, 2), new(5, 2),
+			new(5, 3), new(5, 4), new(5, 5),
+			new(4, 5), new(3, 5), new(2, 5),
+			new(2, 4), new(2, 3), new(2, 2)
+		};
 
-		_path = path;
 		_pathIndex = 1;
-		_waitingForPath = false;
+		CurrentTile = _path[0];
+		Position = TileToWorld(CurrentTile);
 		MoveToNext();
 	}
 
@@ -97,6 +67,14 @@ public partial class Car : Node2D
 		_targetWorldPos = TileToWorld(CurrentTile);
 		_moving = true;
 		PlayDirectionAnim(_currentDirection);
+	}
+
+	private void OnDestinationReached()
+	{
+		_pathIndex = 1;
+		CurrentTile = _path[0];
+		Position = TileToWorld(CurrentTile);
+		MoveToNext();
 	}
 
 	private void PlayDirectionAnim(Vector2I dir)
@@ -116,14 +94,11 @@ public partial class Car : Node2D
 			_sprite.Play(anim);
 	}
 
-	private void OnDestinationReached()
-	{
-		GD.Print("Car reached destination");
-		// TODO: hook into route system - pick next stop and call GoTo() again
-	}
-
 	private Vector2 TileToWorld(Vector2I tile)
 	{
 		return new Vector2(tile.X * TileSize + TileSize / 2f, tile.Y * TileSize + TileSize / 2f);
 	}
+
+	// kept for later A* hookup
+	public Vector2I CurrentTile { get; private set; }
 }
